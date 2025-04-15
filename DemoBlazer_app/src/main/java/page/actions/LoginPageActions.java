@@ -1,0 +1,56 @@
+package page.actions;
+
+import org.openqa.selenium.interactions.Actions;
+
+import org.openqa.selenium.support.PageFactory;
+
+import page.locators.LoginPageLocators;
+import utils.SeleniumDriver;
+
+public class LoginPageActions {
+	
+	
+	//creating an object for LoginPageLocators so we can access all of the page factory elements
+	
+	
+	LoginPageLocators loginPageLocators = new LoginPageLocators();
+
+	public LoginPageActions() {
+		
+		//create an object of loginPageLocators 
+		this.loginPageLocators = new LoginPageLocators();
+		//Initialize the page factory
+		PageFactory.initElements(SeleniumDriver.getDriver(), loginPageLocators);
+		
+		
+	}
+	
+	//----------this is where we put our actions----------
+	
+	public void SignUpLink() {
+		
+		loginPageLocators.SignUpLink.click();
+		
+	}
+	
+	public void EnterUserName(String Username) {
+		
+		loginPageLocators.EnterUsername.sendKeys(Username);
+		
+	}
+	
+	public void EnterPassword (String Password) {
+		
+		loginPageLocators.EnterPassword.sendKeys(Password);
+		
+	}
+	
+	
+	public void ClickSignUp () {
+		
+		loginPageLocators.ClickSignUp.click();
+		
+		
+	}
+	
+}
