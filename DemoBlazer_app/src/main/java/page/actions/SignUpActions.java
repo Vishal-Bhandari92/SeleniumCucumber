@@ -53,4 +53,16 @@ public class SignUpActions {
 		
 	}
 	
+	public void EnterUserNameBlank() {
+		
+		signUpLocators.EnterUsername.clear();;
+		
+	}
+	
+	public void EnterPasswordBlank () {
+		
+		signUpLocators.EnterPassword.clear();;
+		
+	}
+	
 }
