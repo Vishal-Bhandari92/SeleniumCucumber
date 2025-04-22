@@ -1,4 +1,4 @@
-@Add-to-cart
+@Login
 Feature: Log in
   I want to use this template for my feature file
 

@@ -80,6 +80,16 @@ public class Login_steps {
 			alt.accept();
 	}
 
+//	@Then("I should see the following:")
+//	public void i_should_see_the_following(DataTable dataTable) {
+//	  
+//		//asLists will return a list of object. This is a list of strings
+//				List<List<String>>item = dataTable.asLists(String.class);
+//				
+//				//THIS IS FETCHING THE ENTIRE SECOND ROW AND THE FIRST VALUE IN THE SECOND ROW
+//				System.out.println(item.get(2).get(0));
+//		
+//	}
 
 
 }

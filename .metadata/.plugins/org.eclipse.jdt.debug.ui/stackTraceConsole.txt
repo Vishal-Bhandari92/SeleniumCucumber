@@ -1,8 +1,18 @@
-io.cucumber.junit.UndefinedStepException: The step 'I enter a  username and incorrect password to login:' is undefined.
-You can implement this step using the snippet(s) below:
+io.cucumber.junit.UndefinedStepException: The step 'I add samsung galaxy s6, Iphone6, Nexus6 to cart' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
 
-@When("I enter a  username and incorrect password to login:")
-public void i_enter_a_username_and_incorrect_password_to_login(io.cucumber.datatable.DataTable dataTable) {
+@When("I add samsung galaxy s6, Iphone6, Nexus6 to cart")
+public void i_add_samsung_galaxy_s6_iphone6_nexus6_to_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click cart")
+public void i_click_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should see the following:")
+public void i_should_see_the_following(io.cucumber.datatable.DataTable dataTable) {
     // Write code here that turns the phrase above into concrete actions
     // For automatic transformation, change DataTable to one of
     // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
