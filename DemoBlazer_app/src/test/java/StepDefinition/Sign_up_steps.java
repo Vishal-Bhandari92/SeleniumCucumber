@@ -18,7 +18,7 @@ public class Sign_up_steps {
 
 	//if you want to use driver - you need to use getDriver method from SeleniumDriver class !!
 
-	//create an object for LoginPageActions
+	//create an object for SignUpPageActions
 	SignUpActions signUpActions = new SignUpActions();
 	//	SeleniumDriver driver = new SeleniumDriver();
 

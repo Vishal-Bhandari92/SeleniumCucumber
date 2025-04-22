@@ -33,15 +33,15 @@ public class SignUpActions {
 		
 	}
 	
-	public void EnterUserName(String Username) {
+	public void EnterUserName(String UsernameFromDataTable) {
 		
-		signUpLocators.EnterUsername.sendKeys(Username);
+		signUpLocators.EnterUsername.sendKeys(UsernameFromDataTable);
 		
 	}
 	
-	public void EnterPassword (String Password) {
+	public void EnterPassword (String PasswordFromDataTable) {
 		
-		signUpLocators.EnterPassword.sendKeys(Password);
+		signUpLocators.EnterPassword.sendKeys(PasswordFromDataTable);
 		
 	}
 	

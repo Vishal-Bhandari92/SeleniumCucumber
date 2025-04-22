@@ -1,0 +1,13 @@
+@Add-to-cart
+Feature: Adding items to cart
+  I want to use this template for my feature file
+
+  Scenario: 
+    Given I am on the Home page of the demoblaze site "https://www.demoblaze.com/"
+    When I click login
+   # And I enter a username and password to login
+   #   | Username   | Password   |
+   #   | Vishal5829 | Vishal123! |
+  
+  
+  #Vishal5829 Vishal123!
