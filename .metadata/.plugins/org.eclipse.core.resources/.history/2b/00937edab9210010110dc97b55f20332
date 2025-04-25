@@ -1,0 +1,43 @@
+package page.actions;
+
+import org.openqa.selenium.support.PageFactory;
+
+import page.locators.AddToCartLocators;
+import utils.SeleniumDriver;
+
+public class AddToCartActions {
+	
+	AddToCartLocators addtocartLocators = new AddToCartLocators();
+
+	public AddToCartActions() {
+
+		//create an object of loginPageLocators 
+		this.addtocartLocators = new AddToCartLocators();
+		//Initialize the page factory
+		PageFactory.initElements(SeleniumDriver.getDriver(), addtocartLocators);
+		
+		
+	}
+	
+	
+	
+	public void clickSamsungGalaxyS6() {
+		
+
+	}
+	
+	
+	public void ClickIphone632GB() {
+		
+
+		
+	}
+	
+	
+	public void ClickNexus6() {
+		
+
+		
+	}
+
+}

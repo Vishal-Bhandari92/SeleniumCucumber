@@ -1,26 +1,6 @@
-io.cucumber.junit.UndefinedStepException: The step 'I add samsung galaxy s6, Iphone6, Nexus6 to cart' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("I add samsung galaxy s6, Iphone6, Nexus6 to cart")
-public void i_add_samsung_galaxy_s6_iphone6_nexus6_to_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click cart")
-public void i_click_cart() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("I should see the following:")
-public void i_should_see_the_following(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-
+org.junit.ComparisonFailure: expected:<[Iphone 6 32gb]> but was:<[Samsung galaxy s6]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinition.Add_to_cart_steps.i_should_see_the_following_on_the_products_page(Add_to_cart_steps.java:78)
+	at ✽.I should see the following on the products page:(file:///C:/Users/Bobby%20Bhandari/SeleniumCucumberFramework/DemoBlazer_app/src/test/resources/features/Add_to_cart.feature:14)
 

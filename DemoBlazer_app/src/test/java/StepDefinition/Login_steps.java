@@ -27,7 +27,7 @@ public class Login_steps {
 	@When("I click on the login link")
 	public void i_click_on_the_login_link() throws InterruptedException {
 	    loginActions.ClickLogin();
-	    Thread.sleep(3000);
+	    Thread.sleep(4000);
 	}
 	
 	@And("I enter a username and password to login:")
