@@ -77,4 +77,11 @@ public String Nexus6GetTitle() {
 	
 }
 
+public int TotalPrice() {
+	//use the text and then parse it using an integer
+	int i = Integer.parseInt(addtocartLocators.Total.getText());
+	return i;
+		
+}
+
 }

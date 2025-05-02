@@ -36,6 +36,9 @@ public class AddToCartLocators {
 	@FindBy (xpath = "//tr/td[normalize-space(text())=\"Nexus 6\"]")
 	public WebElement Nexus6Title;
 	
+	@FindBy (id = "totalp")
+	public WebElement Total;
+	
 
 	
 }

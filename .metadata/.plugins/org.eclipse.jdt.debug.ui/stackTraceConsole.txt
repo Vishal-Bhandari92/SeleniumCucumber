@@ -1,6 +1,8 @@
-org.junit.ComparisonFailure: expected:<[Iphone 6 32gb]> but was:<[Samsung galaxy s6]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
+java.lang.AssertionError: expected: java.lang.Integer<1800> but was: java.lang.String<1800>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at StepDefinition.Add_to_cart_steps.i_should_see_the_following_on_the_products_page(Add_to_cart_steps.java:78)
-	at ✽.I should see the following on the products page:(file:///C:/Users/Bobby%20Bhandari/SeleniumCucumberFramework/DemoBlazer_app/src/test/resources/features/Add_to_cart.feature:14)
+	at StepDefinition.Add_to_cart_steps.the_total_value_of_the_items_should_be(Add_to_cart_steps.java:107)
+	at ✽.the total value of the items should be 1800(file:///C:/Users/Bobby%20Bhandari/SeleniumCucumberFramework/DemoBlazer_app/src/test/resources/features/Add_to_cart.feature:24)
 
