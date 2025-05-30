@@ -1,0 +1,45 @@
+package page.actions;
+
+import page.locators.LoginLocators;
+
+public class CallLoginActions extends LoginActions {
+	
+	LoginLocators loginLocators = new LoginLocators();
+
+@Override
+	public void ClickLogin() {
+
+		loginLocators.loginLink.click();
+
+	}
+@Override
+	public void EnterLoginUsername(String username) {
+
+
+		loginLocators.EnterloginUsername.sendKeys(username);
+
+	}
+@Override
+	public void EnterLoginPassword(String username) {
+
+
+		loginLocators.EnterloginPassword.sendKeys(username);
+
+	}
+@Override
+	public void ClickLoginButton() {
+
+
+		loginLocators.ClickLoginIn.click();
+
+	}
+@Override
+	public String NameOfUser() {
+
+
+		return loginLocators.NameofUserWelcome.getText();
+
+	}
+	
+	
+}

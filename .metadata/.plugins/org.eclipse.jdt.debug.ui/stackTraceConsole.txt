@@ -1,5 +1,5 @@
-java.lang.UnsupportedOperationException
-	at java.base/java.util.Collections$UnmodifiableCollection.addAll(Collections.java:1102)
-	at StepDefinition.Add_to_cart_steps.i_sum_up_the_items_in_my_cart(Add_to_cart_steps.java:101)
-	at ✽.I sum up the items in my cart(file:///C:/Users/Bobby%20Bhandari/SeleniumCucumberFramework/DemoBlazer_app/src/test/resources/features/Add_to_cart.feature:19)
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.loginLocators.loginLink" is null
+	at page.actions.CallLoginActions.ClickLogin(CallLoginActions.java:13)
+	at StepDefinition.Login_steps.i_click_on_the_login_link(Login_steps.java:30)
+	at ✽.I click on the login link(file:///C:/Users/Bobby%20Bhandari/SeleniumCucumberFramework/DemoBlazer_app/src/test/resources/features/Login.feature:7)
 

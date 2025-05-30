@@ -1,0 +1,12 @@
+package page.actions;
+
+public class CallLoginActions extends LoginActions {
+
+	public void ClickLogin() {
+
+		loginLocators.loginLink.click();
+
+	}
+	
+	
+}

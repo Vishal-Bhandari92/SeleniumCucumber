@@ -1,0 +1,17 @@
+package page.actions;
+
+import page.locators.LoginLocators;
+
+public class CallLoginActions extends LoginActions {
+	
+	LoginLocators loginLocators = new LoginLocators();
+
+
+	public void ClickLogin() {
+
+		loginLocators.loginLink.click();
+
+	}
+	
+	
+}
