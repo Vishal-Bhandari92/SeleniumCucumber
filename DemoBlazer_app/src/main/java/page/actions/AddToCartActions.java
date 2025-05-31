@@ -5,83 +5,35 @@ import org.openqa.selenium.support.PageFactory;
 import page.locators.AddToCartLocators;
 import utils.SeleniumDriver;
 
-public class AddToCartActions {
+public abstract class AddToCartActions {
 	
 	AddToCartLocators addtocartLocators = new AddToCartLocators();
 
 	public AddToCartActions() {
-
-		//create an object of loginPageLocators 
+		//create an object of AddToCartLocators 
 		this.addtocartLocators = new AddToCartLocators();
 		//Initialize the page factory
 		PageFactory.initElements(SeleniumDriver.getDriver(), addtocartLocators);
-		
-		
 	}
 	
+	public abstract void clickSamsungGalaxyS6();
 	
+	public abstract void ClickIphone632GB(); 
 	
-	public void clickSamsungGalaxyS6() {
-		
-		addtocartLocators.SamsungGalaxyS6Link.click();
-	}
+	public abstract void ClickNexus6(); 
 	
+	public abstract void ClickAddToCartButton(); 
 	
-	public void ClickIphone632GB() {
-		
-		addtocartLocators.Iphone6Link.click();
-		
-		
-	}
+	public abstract void ClickHomeLink();
 	
-	public void ClickNexus6() {
-		
-		addtocartLocators.Nexus6Link.click();
-		
-		
-	}
+	public abstract void ClickCartLink();
 	
-	public void ClickAddToCartButton() {
-		
-		addtocartLocators.AddToCartBtn.click();
-		
-	}
-	
-	public void ClickHomeLink() {
-		
-		addtocartLocators.HomeLink.click();
-		
-	}
-	
-	public void ClickCartLink() {
-		
-		addtocartLocators.CartLink.click();
-		
-	}
-	
-public String SamsungGalaxyGetTitle() {
-		
-		return addtocartLocators.SamsungGalaxyTitle.getText();
-		
-	}
+	public abstract String SamsungGalaxyGetTitle();
 
-public String IPhone6GetTitle() {
-	
-	return addtocartLocators.IPhone6Title.getText();
-	
-}
+	public abstract String IPhone6GetTitle();
 
-public String Nexus6GetTitle() {
-	
-	return addtocartLocators.Nexus6Title.getText();
-	
-}
+	public abstract String Nexus6GetTitle();
 
-public int TotalPrice() {
-	//use the text and then parse it using an integer
-	int i = Integer.parseInt(addtocartLocators.Total.getText());
-	return i;
-		
-}
+	public abstract int TotalPrice();
 
 }

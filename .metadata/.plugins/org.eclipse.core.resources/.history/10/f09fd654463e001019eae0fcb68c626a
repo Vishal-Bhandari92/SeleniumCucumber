@@ -1,0 +1,69 @@
+package page.actions;
+
+public class CallAddToCartActions extends AddToCartActions {
+	
+
+	public void clickSamsungGalaxyS6() {
+		
+		addtocartLocators.SamsungGalaxyS6Link.click();
+	}
+	
+	
+	public void ClickIphone632GB() {
+		
+		addtocartLocators.Iphone6Link.click();
+		
+		
+	}
+	
+	public void ClickNexus6() {
+		
+		addtocartLocators.Nexus6Link.click();
+		
+		
+	}
+	
+	public void ClickAddToCartButton() {
+		
+		addtocartLocators.AddToCartBtn.click();
+		
+	}
+	
+	public void ClickHomeLink() {
+		
+		addtocartLocators.HomeLink.click();
+		
+	}
+	
+	public void ClickCartLink() {
+		
+		addtocartLocators.CartLink.click();
+		
+	}
+	
+public String SamsungGalaxyGetTitle() {
+		
+		return addtocartLocators.SamsungGalaxyTitle.getText();
+		
+	}
+
+public String IPhone6GetTitle() {
+	
+	return addtocartLocators.IPhone6Title.getText();
+	
+}
+
+public String Nexus6GetTitle() {
+	
+	return addtocartLocators.Nexus6Title.getText();
+	
+}
+
+public int TotalPrice() {
+	//use the text and then parse it using an integer
+	int i = Integer.parseInt(addtocartLocators.Total.getText());
+	return i;
+		
+}
+
+}

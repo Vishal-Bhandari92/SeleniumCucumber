@@ -1,0 +1,43 @@
+package page.actions;
+
+public class CallSignUpActions extends SignUpActions {
+	@Override
+public void SignUpLink() {
+		
+		signUpLocators.SignUpLink.click();
+		
+	}
+	
+	public void EnterUserName(String UsernameFromDataTable) {
+		
+		signUpLocators.EnterUsername.sendKeys(UsernameFromDataTable);
+		
+	}
+	
+	public void EnterPassword (String PasswordFromDataTable) {
+		
+		signUpLocators.EnterPassword.sendKeys(PasswordFromDataTable);
+		
+	}
+	
+	
+	public void ClickSignUp () {
+		
+		signUpLocators.ClickSignUp.click();
+		
+		
+	}
+	
+	public void EnterUserNameBlank() {
+		
+		signUpLocators.EnterUsername.clear();;
+		
+	}
+	
+	public void EnterPasswordBlank () {
+		
+		signUpLocators.EnterPassword.clear();;
+		
+	}
+
+}

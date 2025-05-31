@@ -1,17 +1,12 @@
 package page.actions;
 
-import org.openqa.selenium.interactions.Actions;
-
 import org.openqa.selenium.support.PageFactory;
-
 import page.locators.SignUpLocators;
 import utils.SeleniumDriver;
 
-public class SignUpActions {
+public abstract class SignUpActions {
 	
-	
-	//creating an object for LoginPageLocators so we can access all of the page factory elements
-	
+	//creating an object for SignUpLocators so we can access all of the page factory elements
 	
 	SignUpLocators signUpLocators = new SignUpLocators();
 
@@ -27,42 +22,16 @@ public class SignUpActions {
 	
 	//----------this is where we put our actions----------
 	
-	public void SignUpLink() {
-		
-		signUpLocators.SignUpLink.click();
-		
-	}
+	public abstract void SignUpLink();
 	
-	public void EnterUserName(String UsernameFromDataTable) {
-		
-		signUpLocators.EnterUsername.sendKeys(UsernameFromDataTable);
-		
-	}
+	public abstract void EnterUserName(String UsernameFromDataTable);
 	
-	public void EnterPassword (String PasswordFromDataTable) {
-		
-		signUpLocators.EnterPassword.sendKeys(PasswordFromDataTable);
-		
-	}
+	public abstract void EnterPassword (String PasswordFromDataTable);
 	
+	public abstract void ClickSignUp();
 	
-	public void ClickSignUp () {
-		
-		signUpLocators.ClickSignUp.click();
-		
-		
-	}
+	public abstract void EnterUserNameBlank();
 	
-	public void EnterUserNameBlank() {
-		
-		signUpLocators.EnterUsername.clear();;
-		
-	}
-	
-	public void EnterPasswordBlank () {
-		
-		signUpLocators.EnterPassword.clear();;
-		
-	}
+	public abstract void EnterPasswordBlank();
 	
 }

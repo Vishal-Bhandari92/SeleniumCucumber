@@ -1,0 +1,45 @@
+package page.actions;
+
+import org.openqa.selenium.support.PageFactory;
+
+import page.locators.LoginLocators;
+import utils.SeleniumDriver;
+
+public abstract class LoginActions {
+
+	//LoginLocators loginLocators = new LoginLocators();
+
+	public LoginActions() {
+
+		//create an object of loginPageLocators 
+		this.loginLocators = new LoginLocators();
+		//Initialize the page factory
+		PageFactory.initElements(SeleniumDriver.getDriver(), loginLocators);
+
+
+	}
+
+
+	//----------this is where we put our actions with abstraction i.e. hiding the implementation----------
+
+	
+	public abstract void ClickLogin();
+
+	public abstract void EnterLoginUsername(String username); 
+
+	public abstract void EnterLoginPassword(String username);
+
+	public abstract void ClickLoginButton();
+
+	public abstract String NameOfUser();
+
+	
+	//or without using abstract, example below
+	
+	//	public abstract void ClickLogin(); //{
+
+	//	loginLocators.loginLink.click();
+
+	//}
+
+}

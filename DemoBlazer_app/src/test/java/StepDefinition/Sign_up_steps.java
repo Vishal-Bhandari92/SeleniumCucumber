@@ -1,9 +1,7 @@
 package StepDefinition;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
@@ -11,7 +9,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.actions.SignUpActions;
+import page.actions.CallSignUpActions;
 import utils.SeleniumDriver;
 
 public class Sign_up_steps {
@@ -19,7 +17,7 @@ public class Sign_up_steps {
 	//if you want to use driver - you need to use getDriver method from SeleniumDriver class !!
 
 	//create an object for SignUpPageActions
-	SignUpActions signUpActions = new SignUpActions();
+	CallSignUpActions signUpActions = new CallSignUpActions();
 	//	SeleniumDriver driver = new SeleniumDriver();
 
 	WebDriver driver;

@@ -11,6 +11,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import page.actions.AddToCartActions;
+import page.actions.CallAddToCartActions;
 import utils.SeleniumDriver;
 
 public class Add_to_cart_steps {
@@ -24,7 +25,7 @@ public class Add_to_cart_steps {
 	private String ActNexusTitle;
 	private String ActIPhone;
 
-	AddToCartActions addtocartActions = new AddToCartActions();
+	CallAddToCartActions addtocartActions = new CallAddToCartActions();
 
 	@And("I add samsung galaxy s6, Iphone6, Nexus6 to cart")
 	public void i_add_samsung_galaxy_s6_iphone6_nexus6_to_cart() throws InterruptedException {

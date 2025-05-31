@@ -1,42 +1,42 @@
 package page.actions;
 
 public class CallLoginActions extends LoginActions {
-	
-	
-@Override
+
+
+	@Override
 	public void ClickLogin() {
 
-	loginLocators.loginLink.click();
+		loginLocators.loginLink.click();
 
 	}
-@Override
+	@Override
 	public void EnterLoginUsername(String username) {
 
 
 		loginLocators.EnterloginUsername.sendKeys(username);
 
 	}
-@Override
+	@Override
 	public void EnterLoginPassword(String username) {
 
 
 		loginLocators.EnterloginPassword.sendKeys(username);
 
 	}
-@Override
+	@Override
 	public void ClickLoginButton() {
 
 
 		loginLocators.ClickLoginIn.click();
 
 	}
-@Override
+	@Override
 	public String NameOfUser() {
 
 
 		return loginLocators.NameofUserWelcome.getText();
 
 	}
-	
-	
+
+
 }
