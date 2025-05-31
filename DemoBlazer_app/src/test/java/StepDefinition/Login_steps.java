@@ -13,7 +13,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.actions.CallLoginActions;
+import page.actions.SubClassLoginActions;
 import page.actions.LoginActions;
 import utils.SeleniumDriver;
 
@@ -21,7 +21,7 @@ import utils.SeleniumDriver;
 public class Login_steps {
 	
 	//create an object for LoginPageActions
-		CallLoginActions loginActions = new CallLoginActions();
+		SubClassLoginActions loginActions = new SubClassLoginActions();
 	
 	
 	

@@ -9,7 +9,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.actions.CallSignUpActions;
+import page.actions.SubClassSignUpActions;
 import utils.SeleniumDriver;
 
 public class Sign_up_steps {
@@ -17,7 +17,7 @@ public class Sign_up_steps {
 	//if you want to use driver - you need to use getDriver method from SeleniumDriver class !!
 
 	//create an object for SignUpPageActions
-	CallSignUpActions signUpActions = new CallSignUpActions();
+	SubClassSignUpActions signUpActions = new SubClassSignUpActions();
 	//	SeleniumDriver driver = new SeleniumDriver();
 
 	WebDriver driver;
